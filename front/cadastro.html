@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Cash: Criar cadastro</title>
+</head>
+<body>
+<div>
+
+    <form action="./home.html">
+        <label> Nome Completo: 
+            <input type="text" id="fname" name="fname" required>
+        </label>
+        <label> Nome Fantasia: 
+            <input type="text" id="fantasyname" name="fantasyname" required>
+        </label>
+        <label> CPF: 
+            <input type="text" id="cpf" name="cpf" required>
+        </label>
+        <label> e-mail : 
+            <input type="email" name="emailLogin" required>
+        </label>
+        <label>Telefone:
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>    
+        </label>
+        <label> Senha: 
+            <input type="password" minlength="8" maxlength="25" if='senha' name="senha" required>
+        </label>
+        <label> Confirme sua senha: 
+            <input type="password" if='confirmasenha' name="confirmasenha" required>
+        </label>
+        <label>
+            <input type="radio" name="pessoafj"> Pessoa Física
+            <input type="radio" name="pessoafj"> Pessoa Jurídca
+        </label>
+
+        <button name="submit"> Acessar Sistema</button>
+    </form>
+    
+</div>
+</body>
+</html>
